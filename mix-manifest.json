@@ -1,0 +1,21 @@
+{
+    "/public/js/odbt.js": "/public/js/odbt.js",
+    "/public/js/app.js": "/public/js/app.js",
+    "/public/js/login.js": "/public/js/login.js",
+    "/public/js/orders.js": "/public/js/orders.js",
+    "/public/js/orderAdmin.js": "/public/js/orderAdmin.js",
+    "/public/js/admin.js": "/public/js/admin.js",
+    "/public/js/orderstat.js": "/public/js/orderstat.js",
+    "/public/js/feedback.js": "/public/js/feedback.js",
+    "/public/js/bookings.js": "/public/js/bookings.js",
+    "/public/js/subscribers.js": "/public/js/subscribers.js",
+    "/public/css/allorder.css": "/public/css/allorder.css",
+    "/public/css/cart.css": "/public/css/cart.css",
+    "/public/css/order.css": "/public/css/order.css",
+    "/public/css/signfrm.css": "/public/css/signfrm.css",
+    "/public/css/app.css": "/public/css/app.css",
+    "/public/css/book/book.css": "/public/css/book/book.css",
+    "/public/css/payments/checkout.css": "/public/css/payments/checkout.css",
+    "/public/css/singleOrder.css": "/public/css/singleOrder.css",
+    "/public/css/adminorder.css": "/public/css/adminorder.css"
+}

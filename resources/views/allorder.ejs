@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="/css/allorder.css" />
+    <section class="allorders-pg">
+
+      <div id="allod-head">
+        <h1>All Orders</h1>
+      </div>
+      <% if (messages.success) { %>
+       <div id="order-notify">
+        
+     
+    <h1><i class="fa-sharp fa-solid fa-check"></i><%= messages.success %> </h1>
+  
+      
+       </div>
+
+       <% } %>
+      <table  id ="table-box">
+        <thead>
+          <tr class="table-rows">
+            <th id="orders-head">Orders</th>
+            <th>Table number</th>
+            <th>Date</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (orders.length) { %>
+
+            <% orders.forEach((order)=>{ %>
+
+              <tr>
+                <td><a href="/customer/orders/<%= order._id %>">Order-Id: &nbsp;<%= order._id %></a></td>
+                <td id="tbl-no"><%= order.tableno%></td>
+                <td ><%= moment(order.createdAt).format('LL');   %></td>
+               
+                <td id="od-time"><%= moment(order.createdAt).format('hh:mm A')  %></td>
+              </tr>
+
+
+
+          <%  }) %>
+        
+          <%  }else  { %>
+
+         <tr>
+          <td>
+            <span>No Orders Found</span>
+          </td></tr>
+
+          <%  } %>
+          
+           
+        </tbody>
+      </table>
+    </section>
+ 

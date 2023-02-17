@@ -1,0 +1,238 @@
+/* OM NAMASHIVAYA */
+:root {
+  --main-col: #ef5644;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #faead8;
+}
+
+/**Empty cart CSS**/
+
+#empt {
+  font-family: "Kanit", sans-serif;
+  margin-top: 90px;
+  text-align: center;
+}
+
+#crt {
+  display: flex;
+  flex-direction: column;
+}
+
+#crt img {
+  height: 400px;
+  width: 390px;
+}
+
+#crt h1 {
+  text-align: center;
+
+  color: #3f3f3f;
+}
+
+#crt h3 {
+  text-align: center;
+
+  color: #3f3f3f;
+}
+
+#emoj {
+  font-size: 45px;
+}
+
+.href-bt {
+  background-color: #ef5644;
+  padding: 10px 19px;
+  border-radius: 3px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.href-bt:hover {
+  background-color: transparent;
+  color: #ef5644;
+  border: 3px solid #ef5644;
+}
+
+/**Empty cart CSS**/
+
+/***New Cart CSS **/
+#crt-box {
+  min-height: calc(100vh - 50px);
+}
+
+#cart-box-cont {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 250px;
+}
+
+#crt-box-head {
+  display: flex;
+  border-bottom: 3px solid #1e1e1e;
+}
+
+#crt-box-head h1 {
+  margin-left: 15px;
+  color: var(--main-col);
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+}
+
+.cart-item {
+  /* font-family: "Kanit", sans-serif; */
+  font-family: "Roboto", sans-serif;
+  margin: 20px 0px;
+
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.cart-item h2 {
+  color: #393939;
+}
+
+.crt-itm-img-bx {
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.crt-itm-img-bx img {
+  height: 80px;
+  width: 80px;
+  margin-right: 20px;
+  border-radius: 80px;
+}
+
+.crt-itm-qty-bx {
+  height: 40px;
+  width: 50px;
+}
+
+.crt-itm-cost-bx {
+  height: 40px;
+  width: 50px;
+}
+
+#crt-itms {
+  border-bottom: 3px solid #1e1e1e;
+}
+
+#crt-tot-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Kanit", sans-serif;
+}
+
+#crt-tot-box h2 {
+  margin-right: 15px;
+}
+#crt-tot-box span {
+  color: var(--main-col);
+  font-size: 30px;
+}
+
+#crt-finish {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#crt-us-det form {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+#crt-us-det form input {
+  width: 225px;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin-top: 10px;
+  background-color: rgb(238, 238, 238);
+  font-family: "Roboto", sans-serif;
+}
+.prim-bt {
+  background-color: var(--main-col);
+  color: white;
+  border-radius: 25px;
+  padding: 10px 30px;
+  border: none;
+  font-family: "Kanit", sans-serif;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+.prim-bt:hover {
+  background-color: transparent;
+  border: 3px solid var(--main-col);
+  color: var(--main-col);
+}
+.pg-form form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 65px;
+  float: right;
+}
+
+.pg-form input {
+  width: 225px;
+  height: 35px;
+  border-radius: 3px;
+
+  border: 1px solid black;
+  margin-top: 10px;
+  background-color: rgb(238, 238, 238);
+  font-family: "Roboto", sans-serif;
+}
+
+#sep-submit input {
+  text-align: center;
+  background-color: #ef5644;
+  padding: 1px 25px;
+  border-radius: 34px;
+  border: none;
+  font-size: 15px;
+  margin-top: 25px;
+  color: whitesmoke;
+  height: 40px;
+  cursor: pointer;
+  width: 125px;
+  position: relative;
+  right: 40px;
+  float: right;
+  font-family: "Kanit", sans-serif;
+}
+
+#sep-submit input:hover {
+  background-color: white;
+  color: #ef5644;
+  border: 3px solid #ef5644;
+}
+
+#log-redirect {
+  text-decoration: none;
+  color: white;
+  background-color: #ef5644;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px 25px;
+  border-radius: 34px;
+  font-family: "Kanit", sans-serif;
+  position: relative;
+  top: 125px;
+  left: 690px;
+}

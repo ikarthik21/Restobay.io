@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="/css/cart.css" /> 
+<link rel="stylesheet" href="/css/payments/checkout.css" /> 
+
+
+<section id="checkout-section">
+
+		<div class="check-head">
+            <h1>Confirm Order</h1>
+           </div>
+      
+           <div class="checkout-cont">
+                    <p>Please Confirm Your details</p>
+                 <div id="check-cont">
+         
+                  
+				   <div class="check-items">
+                    <h3>Order Id</h3>  
+                    <p><%- paymentDetail.orderId %> </p>
+                   </div>
+                 
+
+
+				   <div class="check-items-crt">
+					
+                 
+                    <% for(let pizza of Object.values(session.cart.items)) { %>
+                    <div class="cart-item">
+                   
+                    <div class="crt-itm-img-bx">
+                   <img src="/img/<%= pizza.item.image %>" alt="">
+                   <h2><%= pizza.item.name %></h2>
+                    </div>
+                    <div class="crt-itm-qty-bx">
+                       <h2><%= pizza.qty %></h2>
+                    </div>
+                    <div class="crt-itm-cost-bx">
+                                      <h2><%= pizza.item.price *pizza.qty  %></h2>
+                    </div> 
+                    
+                      
+                    </div>
+                    <% } %>
+
+                 
+
+                 </div>
+				 <div class="check-items">
+                    <h3>Amount</h3>  
+                    <p>Rs. <%- paymentDetail.amount/100 %>
+					</div>
+
+				 <button type="submit" class="check-bt" onclick="checkout(event)">Checkout</button>
+           </div>
+
+		   <form id="paymentVerifyForm" action="/pay/verify" method="POST">
+			<input name="razorpay_payment_id" type="hidden" id="razorpay_payment_id" />
+			<input name="razorpay_order_id" type="hidden" id="razorpay_order_id"/>
+			<input name="razorpay_signature" type="hidden" id="razorpay_signature"/>
+             
+		</form>
+
+
+	
+    </section>
+</body>
+</html>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        function checkout(event) {
+            const razorpayKeyId = '<%- razorpayKeyId %>'
+            const orderId = '<%- JSON.stringify(paymentDetail.orderId) %>'
+            const options = {
+                "key": razorpayKeyId,
+                "currency": "INR",
+                "name": "Restobay",
+                "description": "Restobay Orders",
+                "image": "https://previews.123rf.com/images/subhanbaghirov/subhanbaghirov1605/subhanbaghirov160500087/56875269-vector-light-bulb-icon-with-concept-of-idea-brainstorming-idea-illustration-.jpg",
+                "order_id": JSON.parse(orderId),
+                "handler": function (response){
+                    document.getElementById('razorpay_payment_id').value= response.razorpay_payment_id;
+                    document.getElementById('razorpay_order_id').value= response.razorpay_order_id;
+                    document.getElementById('razorpay_signature').value= response.razorpay_signature;
+                    document.getElementById("paymentVerifyForm").submit();
+                },
+                "modal": {
+                    ondismiss: function() {
+                        alert(`Payment Failed`)
+                    }
+                },
+                "theme": {
+                    "color": "#22527b"
+                }
+            };
+            const razorpay = new Razorpay(options);
+            razorpay.open();
+            event.preventDefault();
+        }
+    </script>
+</body>
+</html>

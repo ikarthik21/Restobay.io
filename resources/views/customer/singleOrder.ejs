@@ -1,0 +1,118 @@
+<link rel="stylesheet" href="/css/singleOrder.css" />
+<link rel="stylesheet" href="/css/cart.css" /> 
+
+<section id="stat-cont">
+    <div id="stat-head">
+         <h1>
+             Your Order Status
+         </h1>
+
+         <span>Order Id: &nbsp;<%= order._id %></span>
+          <input type="hidden" id="hiddeninput" value="<%= JSON.stringify(order) %>">
+     </div>
+
+
+
+
+
+
+<div id="stat-itms">
+<ul>
+
+    <li class="st-itm-cls" data-status="order_placed"> 
+        <div class="st-icon">
+            <i class="fa-solid fa-clipboard-list fa-3x"></i>
+        </div>
+        
+    
+          <div class="stline"></div>
+        <h2> Placed </h2>
+        
+    </li>
+
+    <li class="st-itm-cls" data-status="confirmed"> 
+        <div class="st-icon">
+            <i class="fa-solid fa-check-double fa-3x"></i>
+           
+        </div>
+       
+          <div class="stline"></div>
+        <h2> Confirmed</h2>
+    </li>
+     <li class="st-itm-cls" data-status="prepared"> 
+        
+        <div class="st-icon">
+            <i class="fa-sharp fa-solid fa-bowl-food fa-3x"></i>
+        </div>
+      
+          <div class="stline"></div>
+        <h2>  Prepared </h2>
+    </li>
+
+   
+    <li class="st-itm-cls" data-status="delivered"> 
+         
+        <div class="st-icon">
+            <i class="fa-solid fa-utensils fa-3x"></i>
+        </div>
+        <div class="stline"></div>
+        <h2> Delivered</h2>
+        
+    </li>
+     
+ 
+    <li class="st-itm-cls" data-status="completed"> 
+         
+        <div class="st-icon">
+        <i class="fa-solid fa-face-smile fa-3x"></i>
+        </div>
+       
+        <h2>  Completed </h2>
+    </li>
+
+
+
+</ul>
+</div>
+
+
+
+            
+    <div id="crt-box-head">
+      <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              <h1>Order Summary</h1>
+    </div>
+
+    <div id="crt-itms">
+      <% for(let pizza of Object.values(order.items)) { %>
+      <div class="cart-item">
+     
+      <div class="crt-itm-img-bx">
+     <img src="/img/<%= pizza.item.image %>" alt="">
+     <h2><%= pizza.item.name %></h2>
+      </div>
+      <div class="crt-itm-qty-bx">
+         <h2><%= pizza.qty %></h2>
+      </div>
+      <div class="crt-itm-cost-bx">
+                        <h2><%= pizza.item.price *pizza.qty  %></h2>
+      </div> 
+      
+        
+      </div>
+      <% } %>
+ 
+          </div>
+             <div id="crt-tot-box">
+               <h2>Total Amount:</h2> <span><%= order.totalPrice %></span>
+             </div>
+
+           
+                
+
+
+
+
+</section>
+
+    

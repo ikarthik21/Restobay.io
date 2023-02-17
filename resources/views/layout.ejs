@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restobay</title>
+<link rel="shortcut icon" href="https://icons.iconarchive.com/icons/aha-soft/food/256/hamburger-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/app.css" />   
+    </head>
+  <body>
+    <nav id="navbar" >
+      <div id="logo">
+        <h1><a href="/home">RESTOBAY</a></h1>
+      </div>
+  
+      <div id="menu-box">
+        <ul id="li-items">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/home#middle">Restaurant</a></li>
+          <li><a href="/home#contact">Contact Us</a></li>
+          <li><a href="/home#feedback">Feedback</a></li>
+        </ul>
+      </div>
+
+
+      <div id="profile-box">
+        <% if(user){ %>
+
+          <% if(user.role=="customer" ){ %>
+        <div  class="logout-box">
+            <a href="/customer/orders">Orders</a>
+          </div>
+            <% } else if(user.role=="admin"){ %>
+              <div  class="logout-box">
+              <a href="/admin/orders">Orders</a>
+            </div>
+            <div class="logout-box">
+              <a href="/admin/bookings">Bookings</a>
+            </div>
+            <div class="logout-box">
+              <a href="/admin/feedbacks">Feedbacks</a>
+            </div>
+            <div class="logout-box">
+              <a href="/admin/subscribers">Subscribers</a>
+            </div>
+              <% } %>
+
+     </div>
+
+
+     <div class="logout-box">
+      
+      <a href="/logout">Logout</a>
+   
+   
+</div>
+     <% } else { %>
+
+          <div id="signupin">
+            <a href="/sign">Sign In/Up</a>
+       </div>
+     <% } %>
+
+        <div id="cart-box">
+          <a href="/cart"><i class="fa-sharp fa-solid fa-cart-shopping fa-1x"></i></a>
+          <h4 id="cart-cnt"><%= session.cart ? session.cart.totalQty : '' %></h4>
+
+        </div> 
+        </div> 
+      
+   
+      </div>
+    </nav>
+
+   
+        <%- body %>
+       
+     
+  
+     <!-- <footer class="footer-box">
+      <div class="center footer-bar">
+        Copyright &copy; www.Restobay.com. All rights reserved!
+      </div>
+    </footer> 
+  -->
+
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/orders.js"></script>
+  <script src="/js/bookings.js"></script>
+  <script src="/js/login.js"></script>
+  <script src="/js/odbt.js"></script>
+  <script src="/js/admin.js"></script>
+  <script src="/js/orderAdmin.js"></script>
+  <script src="/js/orderstat.js"></script>
+  <script src="https://unpkg.com/notie"></script> 
+  
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+</html>

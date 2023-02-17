@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0;
+  }
+  
+  #pg-box {
+	margin: 100px 350px;
+	height: 490px;
+	width: 800px;
+  
+	display: flex;
+	box-shadow: 0 14px 28px #fac5c5, 0 14px 28px #f774c5;
+  
+	border-radius: 7px;
+  }
+  
+  #pg-log-in {
+	  font-family: "Kanit", sans-serif;
+	  /* font-family: "Anton", sans-serif; */
+	  /* font-family: "Roboto", sans-serif; */
+	height: 490px;
+	width: 400px;
+	background-color: rgb(255, 246, 246);
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  #pg-sign-up {
+	height: 490px;
+	width: 400px;
+  /* 
+	background: linear-gradient(to right, #ef5644, #de0089);
+	background: linear-gradient(to bottom, #ef5644, #de0089); */
+	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	border-radius: 7px;
+	display: flex;
+	
+   
+  }
+  
+  
+  #log-in-ele{
+	  display: flex;
+	  flex-direction: column;
+	  text-align: center;
+	  flex-direction: column;
+	  margin: 90px 25px;
+  }
+  
+  #log-in-ele p{
+	  margin-bottom: 10px;
+  }
+  
+  .gplus{
+	  margin-top: 15px;
+	  margin-bottom: 50px;
+	  color: black;
+  
+  }
+  .gplus i{
+  
+	  border: 2px solid black;
+	  border-radius: 100px;
+	cursor: pointer;
+	  padding: 5px 3px;
+	  color: rgb(0, 0, 0);
+  }
+  
+  .pg-form form{
+	  display: flex;
+	  flex-direction: column;
+	  margin-left:65px;
+  }
+  
+  .pg-form input{
+	  width: 225px;
+	  height: 35px;
+	  border-radius: 3px;
+	  border: 1px solid black;
+	margin-top: 10px;
+	  background-color:rgb(238, 238, 238);
+	  font-family: "Roboto", sans-serif;
+  }
+  
+  
+  #sep-submit input{
+	  text-align: center;
+	  background-color: #ef5644;
+	  padding: 1px 25px;
+	  border-radius: 34px;
+	  border: none;
+	  font-size: 15px;
+	  margin-top: 25px;
+	  color: whitesmoke;
+	  height: 40px;
+	  cursor: pointer;
+	  width: 125px;
+	  position:relative;
+	  right:40px;
+	  font-family: "Kanit", sans-serif;
+	  
+  }
+  
+  #sep-submit input:hover{
+	  background-color: white;
+	  color: #ef5644;
+	  border: 3px solid #ef5644;;
+  }
+  
+  #signup-matter{
+	  margin: 175px 100px;
+	  color: white;
+	  font-family: "Kanit", sans-serif;
+  }
+  
+  #sign-up-bt{
+	  background-color: white;
+	  padding: 1px 25px;
+	  border-radius: 34px;
+	  color: #ef5644;
+	  width: 125px;
+	  border: 5px solid #ef5644;
+	  height: 50px;
+	  margin-top: 15px;
+	  font-family: "Kanit", sans-serif;
+	  cursor: pointer;
+  }
+  
+  #sign-up-bt:hover{
+	  border: 2px solid black;
+  }
+  
+  
+  
+  
+  
+  #pg-sup-in {
+	  font-family: "Kanit", sans-serif;
+	height: 490px;
+	width: 400px;
+	background-color: rgb(255, 246, 246);
+	border-radius: 7px;
+	/* display: flex; */
+	display: none;
+	flex-direction: column;
+  }
+  
+  
+  
+  #sup-in-ele{
+	  display: flex;
+	  flex-direction: column;
+	  text-align: center;
+	  flex-direction: column;
+	  margin: 50px 25px;
+  }
+  
+  #sup-in-ele p{
+	  margin-bottom: 10px;
+  }
+  
+  
+  #gplus-new{
+	  margin-bottom: 5px;
+  }
+  
+  
+  
+  #pg-log-up{
+	  height: 490px;
+	  width: 400px;
+	  background: linear-gradient(to right, #FF4B2B, #FF416C);
+	  border-radius: 7px;
+	  /* display: flex; */
+	  display: none;
+  }
+  
+  #logup-matter{
+	  margin: 175px 100px;
+	  color: white;
+	  font-family: "Kanit", sans-serif;
+  }
+  
+  #log-up-bt{
+	  background-color: white;
+	  padding: 1px 25px;
+	  border-radius: 34px;
+	  color: #ef5644;
+	  width: 125px;
+	  border: 5px solid #ef5644;
+	  height: 50px;
+	  margin-top: 15px;
+	  font-family: "Kanit", sans-serif;
+	  cursor: pointer;   
+  }
+  
+  #log-up-bt:hover{
+	  border: 2px solid black;
+  
+  
+  }
+
+
+
+  .all-req{
+	font-family: 'Courier New', Courier, monospace;
+	color: red;
+	font-size: 15px;
+	font-weight:bold;
+  }

@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="/css/order.css" />
+<section class="middle">
+  <% if(messages.error3) { %>
+
+  <div class="all-req" id="msg-box"><%= messages.error3 %></div>
+
+  <% } %>
+  <div class="our-rest">
+    <br />
+    <h2>Our Specials</h2>
+  </div>
+  <div class="carousel" data-flickity='{ "autoPlay": 1750}'>
+    <img src="img/vhk.jpg" alt="" class="carousel-cell" />
+    <img src="img/vbi.jpg" alt="" class="carousel-cell" />
+    <img src="img/glb.jpg" alt="" class="carousel-cell" />
+    <img src="img/rvc.jpg" alt="" class="carousel-cell" />
+    <img src="img/troti.jpg" alt="" class="carousel-cell" />
+  </div>
+</section>
+
+<section class="orders">
+  <div class="order-box">
+    <div id="order-bar">
+      <li id="all-bt">All</li>
+      <li id="north-bt">North Indian</li>
+      <li id="south-bt">South Specials</li>
+      <li id="desserts-bt">Desserts</li>
+    </div>
+  </div>
+
+  <div id="north" class="order-itm-box">
+    <div class="itm-flx">
+      <% nitems.forEach(function(items){ %>
+      <div class="items">
+        <img src="img/<%= items.image %>" alt="" />
+        <h3><%= items.name %></h3>
+        <div class="costs"><h3>Rs.<%= items.price %></h3></div>
+        <button data-pizza="<%= JSON.stringify(items) %>" class="add-cart">
+          + add
+        </button>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+  <div id="south" class="order-itm-box">
+    <div class="itm-flx">
+      <% sitems.forEach(function(items){ %>
+      <div class="items">
+        <img src="img/<%= items.image %>" alt="" />
+        <h3><%= items.name %></h3>
+        <div class="costs"><h3>Rs.<%= items.price %></h3></div>
+        <button data-pizza="<%= JSON.stringify(items) %>" class="add-cart">
+          + add
+        </button>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+
+  <div id="desserts" class="order-itm-box">
+    <div class="itm-flx">
+      <% dess.forEach(function(items){ %>
+      <div class="items">
+        <img src="img/<%= items.image %>" alt="" />
+        <h3><%= items.name %></h3>
+        <div class="costs"><h3>Rs.<%= items.price %></h3></div>
+        <button data-pizza="<%= JSON.stringify(items) %>" class="add-cart">
+          + add
+        </button>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</section>

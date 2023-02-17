@@ -1,0 +1,96 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: #faead8;
+}
+#stat-cont{
+        margin: 80px 150px ;
+    height: 550px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#stat-head{
+    display: flex;
+    justify-content: space-between;  
+    margin-bottom: 25px;
+    width: 60vw;
+    
+
+}
+#stat-head h1{
+    font-size: 25px;
+    font-family: "Anton", sans-serif;
+    color: #ef5644;
+}
+#stat-head span{
+    color: #00895bfb;
+    font-family: "Kanit", sans-serif;
+
+}
+#stat-itms
+{
+    margin-top: 20px;
+}
+
+.st-itm-cls{
+    display: flex;
+    position:  relative;
+    margin-bottom:100px;
+    color: #383838;
+    
+}
+
+.st-itm-cls h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+
+}
+
+.stline{
+    background-color: black;
+     height: 85px;
+     width: 2px;
+     position:absolute;
+     left: 20px;
+     top: 45px;
+}
+
+
+
+li{
+    list-style: none;
+
+}
+
+.st-icon{
+   margin-right: 20px;
+   position:relative;
+   margin-bottom: 10px;
+   left: 0px;
+   top: -10px;
+}
+
+.comp-col{
+    opacity: 0.3;
+ }
+ 
+ 
+ .act-col{
+    color: #ef5644;
+ 
+ }
+
+ .flt-right
+{
+   position: relative;
+   left: 60px;
+   top: 7px;
+   font-weight: bold;
+   font-size: 15px;
+}

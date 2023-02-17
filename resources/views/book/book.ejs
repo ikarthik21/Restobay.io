@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/book/book.css" /> 
+<section class="res-sec">
+    <div class="res-form-div">
+      <h1>Book Your Table</h1>
+      <%  if(messages.error) { %>
+        <span class="all-req"><%= messages.error%></span>
+        <% } %>
+      <form action="/table" method="post">
+          <div>
+              <input type="text" class="form-inp" name="name" id="" placeholder="Name">
+              <input type="text" class="form-inp" name="phone" id="" placeholder="Mobile">
+          </div>
+         
+          <div>
+              <input type="email" class="form-inp" name="email" placeholder="E-mail">
+              <input type="date" class="form-inp" name="date" id="frm-date" placeholder="Select Date">
+          </div>
+         
+
+          <div>
+              <input type="time" class="form-inp" name="time" >
+              <input type="number" name="seat" class="form-inp" id="frm-slct-size"   min=1 max= 6 placeholder="Seater">
+              
+          </div>
+          
+          <input type="submit" value="Book"  name="submit" id="submit-frm-bt">
+
+      </form>
+    </div>
+  </section>

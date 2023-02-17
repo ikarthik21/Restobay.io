@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="/css/payments/checkout.css" /> 
+
+
+<section id="checkout-section">
+
+		<div class="check-head">
+            <h1>Payment Successful...!!</h1>
+           </div>
+      
+           <div class="checkout-cont">
+                    <p>Thanks for Ordering from Restobay</p>
+                 <div id="check-cont">
+         
+                  
+				   <div class="check-items">
+                    <h3>Payment ID</h3>  
+                    <p id="orderId"><%- paymentDetail.orderId %> </p>
+                   </div>
+                 
+
+				   <div class="check-items">
+                    <h3>Transaction ID</h3>  
+                    <p id="orderId"><%- paymentDetail.paymentId %></p>
+                   </div>
+
+				   <div class="check-items">
+                    <h3> Table Booked Date</h3>  
+                    <p><%- session.date %></p>
+					</div>
+
+					
+					<div class="check-items">
+						<h3> Table Booked Time</h3>  
+						<p><%- session.time %></p>
+						</div>
+
+                   
+				 <div class="check-items">
+                    <h3>Table No</h3>  
+                    <p><%- session.table %></p>
+					</div>
+ 
+				 
+                 
+				
+				 <div class="check-items">
+                    <h3>Amount</h3>  
+                    <p>Rs.<%- paymentDetail.amount/100 %></p>
+					</div>
+
+
+					<div class="check-items">
+						
+
+						Please enter the details to proceed &nbsp;
+
+						
+
+
+				  </div>
+
+					<div class="check-items" id="post-order" >
+						  
+							
+						  <div>
+							
+							<form action="/storeorder" method="post">
+
+							
+								<% if(! session.table ){ %>
+								<input type="text" name="tableno" placeholder="Table Number">
+								<% } %>
+							 <input type="text" name="phone" placeholder="Phone Number">
+							 <input type="text" name="inst" placeholder="Add Instructions">
+					
+								<input type="submit" class="check-bt">
+							  </form>
+					
+
+
+						  </div>
+						
+							
+						
+				               
+				
+					   </div>
+
+
+
+			
+           </div>
+
+		  
+		
+
+	
+    </section>

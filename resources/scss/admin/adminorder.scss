@@ -1,0 +1,96 @@
+
+  #allorders-pg {
+    margin: 100px 200px;
+    flex: 1 1 auto; 
+
+  }
+  
+  section {
+    margin: 100px 100px;
+   
+  }
+  table {
+    border-collapse: collapse;
+    border: 1px solid #878787;
+  }
+  #order-notify {
+    margin-bottom: 10px;
+  }
+  
+  th,
+  td,
+  tr {
+    border: 1px solid black;
+  
+    border: 1px solid #878787;
+  }
+  
+  th {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: left;
+  }
+  #orders-head {
+    width: 80vw;
+    font-family: "Kanit", sans-serif;
+  }
+  thead th {
+    width: 20vw;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+  }
+  
+  i {
+    display: inline;
+  }
+  
+  #order-notify {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 12px;
+    background-color: #27b45f;
+    color: whitesmoke;
+    padding: 0px 10px;
+    margin-top: 10px;
+  }
+  #order-notify h1 {
+    padding: 5px 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color:#ef5644;
+    margin-left: 2px;
+  }
+ 
+ #allod-head h1{
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 10px;
+ }
+
+  tr{
+    padding: 10px 0px;
+    height: 45px;
+    text-align: center;
+  }
+
+  .order-dtls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ text-align: justify;
+  }
+  
+  .dtls-id{
+  margin: 10px 0px;
+  font-weight: bold;
+  color: #ef5644;
+  }
+  .order_itm{
+    margin: 10px 0px;
+  
+  }
+  .select-bt{
+    padding: 5px 10px;
+  }

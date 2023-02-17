@@ -1,0 +1,84 @@
+.res-sec{
+    margin: 120px 350px;
+    height: 390px;
+    width: 550px;
+    background-color: #ef5644;
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    display: flex;
+    box-shadow: 0 14px 28px #fac5c5, 0 14px 28px #f774c5;
+    border-radius: 7px;
+        font-family: "Roboto", sans-serif;
+}
+
+.res-sec h1{
+    color: whitesmoke;
+    font-family: "Kanit", sans-serif;
+    font-size: 35px;
+    margin-left: 45px;
+}
+.res-form-div form{ 
+    font-family: "Kanit", sans-serif;
+   
+  border-radius: 0px;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 40px;
+  flex-direction: column;
+}
+
+.form-inp{
+    margin: 8px 5px;
+    width: 220px;
+    border-radius: 5px;
+    height: 40px;
+    
+    border: none;
+  color: #525252;
+    font-family: "Kanit", sans-serif;
+}
+
+
+
+
+#frm-date{
+    width: 225px;
+
+}
+
+#submit-frm-bt{
+    width: 100px;
+    background-color: white;
+    padding: 1px 25px;
+    border-radius: 34px;
+    color: #ef5644;
+    width: 125px;
+    border: 5px solid #ef5644;
+    height: 50px;
+    margin-top: 15px;
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+    position: relative;
+    left: 165px;
+}
+
+form :placeholder-shown{
+    font-family: "Roboto", sans-serif;
+    color: rgb(219, 219, 219);
+   
+}
+
+.all-req{
+	font-family: 'Courier New', Courier, monospace;
+	color: white;
+	font-size: 18px;
+	font-weight:bold;
+      margin-left: 70px;
+      margin-top: 30px;
+}
+
+#frm-slct-size{
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    width: 222px;
+}

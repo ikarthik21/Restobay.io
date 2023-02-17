@@ -1,0 +1,401 @@
+/* OM NAMASHIVAYA */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faead8;
+}
+
+#navbar {
+  display: flex;
+  background-color: #faead8;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kanit", sans-serif;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  flex: 2;
+}
+
+#logo {
+  flex: 4;
+  margin-left: 15px;
+  font-family: "Anton", sans-serif;
+  color: #ef5644;
+  font-size: 1.4rem;
+}
+
+#logo a {
+  text-decoration: none;
+  color: #ef5644;
+}
+
+#menu-box {
+  flex: 9;
+}
+
+#menu-box ul {
+  display: flex;
+}
+
+#menu-box ul li {
+  list-style: none;
+  margin: 10px 10px;
+}
+
+#menu-box ul li a {
+  text-decoration: none;
+  padding: 10px 10px;
+  color: black;
+}
+
+#menu-box ul li a:hover {
+  border-bottom: 4px solid #ef5644;
+}
+
+#profile-box {
+  display: flex;
+  justify-content: space-around;
+  flex: 3;
+}
+
+#signupin a {
+  background-color: #ef5644;
+  padding: 10px 19px;
+  border-radius: 3px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#signupin a:hover {
+  background-color: transparent;
+  color: #ef5644;
+  border: 3px solid #ef5644;
+}
+
+.logout-box {
+  margin: 0px 15px;
+}
+
+.logout-box a {
+  background-color: #ef5644;
+  padding: 10px 19px;
+  border-radius: 3px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.logout-box a:hover {
+  background-color: transparent;
+  color: #ef5644;
+  border: 3px solid #ef5644;
+}
+
+#cart-box i {
+  color: #ef5644;
+  position: relative;
+  right: 15px;
+}
+
+#cart-box {
+  display: flex;
+  color: #ef5644;
+  background-color: white;
+  padding: 5px 25px;
+  border-radius: 15px;
+}
+
+#home {
+  background-color: #faead8;
+  height: 81vh;
+  padding: 20px 75px;
+  padding-top: 125px;
+}
+
+#home-box {
+  display: flex;
+}
+
+#img-box {
+  flex: 3;
+}
+
+#text-box {
+  flex: 4;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+#txt-box-txt {
+  position: absolute;
+  padding-left: 50px;
+  top: 300px;
+  font-family: "Kanit", sans-serif;
+  font-size: 35px;
+  color: #3f3f3f;
+}
+
+#txt-box-txt p {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+#get-start {
+  margin-left: 20px;
+  background-color: #ef5644;
+  padding: 12px 25px;
+  border-radius: 4px;
+  border: none;
+  font-size: 17px;
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  cursor: pointer;
+}
+
+#get-start:hover {
+  background-color: transparent;
+  color: #ef5644;
+  border: 3px solid #ef5644;
+}
+
+#operations {
+  display: flex;
+  /* margin-left: 60px; */
+  margin-top: 45px;
+  background-color: #ef5644;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+#operations a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+
+#book-table {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+
+#order-food {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 4;
+}
+
+/* external css: flickity.css */
+/* external css: flickity.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.carousel {
+  background: #eee;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 600px;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* end of flickity */
+#middle {
+  background-color: #faead8;
+  padding: 0px 20px;
+}
+
+.our-rest {
+  font-family: "Anton", sans-serif;
+  color: #3f3f3f;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 25px;
+  margin-bottom: 18px;
+}
+
+.our-rest h2 {
+  border-bottom: 6px solid #ef5644;
+  display: inline-block;
+}
+
+#contact {
+  margin-top: 40px;
+  background-color: #faead8;
+  padding: 0px 20px;
+}
+
+#contact-us {
+  margin: 50px;
+  padding: 0px 200px;
+  display: flex;
+  flex-basis: content;
+  justify-content: space-around;
+}
+
+.cntct-itm {
+  height: 300px;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.cntct-itm h3 {
+  display: inline-block;
+  font-family: "Anton", sans-serif;
+  border-bottom: 6px solid #ef5644;
+  color: #3f3f3f;
+}
+
+.center {
+  text-align: center;
+}
+
+.cntct-itm h4 {
+  font-family: "Kanit", sans-serif;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.cntct-itm p {
+  font-family: "Roboto", sans-serif;
+  margin: 5px;
+}
+
+#location h3 {
+  margin-bottom: 20px;
+}
+
+#location p {
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+#cont-det h3 {
+  margin-bottom: 25px;
+}
+
+#cont-det p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 25px;
+}
+
+#timings p {
+  font-family: "Roboto", sans-serif;
+}
+
+#form-sec form {
+  width: 80%;
+}
+
+#form-seclabel {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.2rem;
+}
+
+#form-sec button {
+  padding: 7px 7px;
+  border-radius: 5px;
+  font-family: "Kanit", sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 10px 75px;
+}
+
+#bottom-sec {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.form-ele {
+  margin: 10px;
+}
+
+.form-ele label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.form-ele input {
+  padding: 10px 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 400px;
+}
+
+.form-ele textarea {
+  padding: 10px 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 400px;
+}
+
+#subs-sec h3 {
+  font-family: "Kanit", sans-serif;
+  color: #3f3f3f;
+  margin-bottom: 10px;
+}
+
+.subs-sec-input {
+  padding: 10px 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 300px;
+}
+
+#subs-button {
+  background-color: #ef5644;
+  padding: 12px 0px;
+  border-radius: 4px;
+  border: none;
+  font-size: 17px;
+  color: whitesmoke;
+  cursor: pointer;
+  width: 100px;
+  display: inline;
+}
+
+#frm-sub {
+  background-color: #ef5644;
+  padding: 12px 25px;
+  border-radius: 4px;
+  border: none;
+  font-size: 17px;
+  color: whitesmoke;
+  cursor: pointer;
+  width: 100px;
+}
+
+.footer-bar {
+  background-color: #ef5644;
+  color: whitesmoke;
+}
+
+#contact i {
+  color: #ef5644;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+}
