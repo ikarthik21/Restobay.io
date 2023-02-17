@@ -13,7 +13,7 @@ day. This brings all necessities in one place that benefits both user and the ow
 
 ## Demo
 
-https://restobay.xyz/
+https://restobay-kk.onrender.com/
 
 #### Demo Video
 https://www.youtube.com/watch?v=TzYTCk9vl4w
