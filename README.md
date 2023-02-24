@@ -105,4 +105,4 @@ Start the server
 ![App Screenshot](https://i.ibb.co/K0nGWVb/07.png)
 
 #### Admin Page
-![App Screenshot](https://i.ibb.co/drGmcwQ/08.png)
+![App  creenshot](https://i.ibb.co/drGmcwQ/08.png)
