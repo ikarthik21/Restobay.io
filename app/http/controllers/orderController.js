@@ -16,25 +16,31 @@ Mongoclient.connect(
 
 function orderController() {
   return {
-   async order(req, res) {
-      let nitems, sitems, dess;
-
-      database.collection('north').find({}).toArray((err, result) => {
-        if (err) throw err;
-        nitems = result;
-      }), database.collection('south').find({}).toArray((err, result) => {
-        if (err) throw err;
-        sitems = result;
-      }), database.collection('dessert').find({}).toArray((err, result) => {
-        if (err) throw err;
-        dess = result;
+    async order(req, res) {
+      try {
+        console.log('Starting database queries');
+        const [nitems, sitems, dess] = await Promise.all([
+          database.collection('north').find({}).toArray(),
+          database.collection('south').find({}).toArray(),
+          database.collection('dessert').find({}).toArray(),
+        ]);
+        console.log('All database queries completed');
+        console.log('nitems:', nitems);
+        console.log('sitems:', sitems);
+        console.log('dess:', dess);
+    
         res.render('orders', {
           nitems: nitems,
           sitems: sitems,
           dess: dess,
         });
-      })
-    },
+      } catch (err) {
+        console.error(err);
+        res.status(500).send('Internal Server Error');
+      }
+    }
+    
+    ,
    async update(req, res) {
 
       // let cart ={
