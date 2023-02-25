@@ -16,7 +16,7 @@ Mongoclient.connect(
 
 function orderController() {
   return {
-    order(req, res) {
+   async order(req, res) {
       let nitems, sitems, dess;
 
       database.collection('north').find({}).toArray((err, result) => {
@@ -35,7 +35,7 @@ function orderController() {
         });
       })
     },
-    update(req, res) {
+   async update(req, res) {
 
       // let cart ={
       //   items:{
