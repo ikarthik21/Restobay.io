@@ -44,7 +44,7 @@ transporter.verify((err, success) => {
 function signController() {
 
   const _getRedirectURL = (req) => {
-    return req.user.role == 'admin' ? '/admin/orders' : '/orders';
+    return req.user.role == 'admin' ? '/admin/orders' : '/home';
   }
 
   return {
